@@ -9,7 +9,7 @@ package cs;
  *
  * @author Shakaw
  */
-public class cpf {
+public class Cpf {
 
     public static boolean cpf(int n[]) {
         if (n.length != 11){
