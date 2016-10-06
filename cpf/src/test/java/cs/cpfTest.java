@@ -18,17 +18,39 @@ public class cpfTest {
     }
 
     /**
-     * Test of cpf method, of class cpf.
+     * Testa vetor com numeros válidos.
      */
     @Test
     public void testCpf() {
+        int n[] = {0,1,4,5,3,4,2,3,1,6,5};
+        Cpf.cpf(n);
+    }
+    
+    /**
+     * Testa a entrada de numeros inválido.
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumeroInvalido() throws Exception {
+        int n[] = {0,0,0,0,0,0,0,0,0,0,0};
+        Cpf.cpf(n);
     }
 
     /**
-     * Test of cpf2 method, of class cpf.
+     * Testa vetor com numeros válidos..
      */
     @Test
     public void testCpf2() {
+        int n[] = {0,1,4,5,3,4,2,3,1,6,5};
+        Cpf.cpf2(n);
+    }
+    
+    /**
+     * Testa a entrada de numeros inválido.
+     */
+    @Test(expected = IllegalArgumentException.class)
+    public void testNumeroInvalido2() throws Exception {
+        int n[] = {0,0,0,0,0,0,0,0,0,0,0};
+        Cpf.cpf2(n);
     }
 
     /**
@@ -36,6 +58,7 @@ public class cpfTest {
      */
     @Test
     public void testMod() {
+        Cpf.mod(3,2);
     }
     
 }
